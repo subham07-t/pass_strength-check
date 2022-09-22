@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>password_strength_check</title>
+    <script
+      src="https://kit.fontawesome.com/c5260d95ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Strength check</h1>
+      <div class="input-data">
+        <div class="display">
+          <input
+            onkeyup="trigger()"
+            type="password"
+            placeholder="Type Password Here"
+          />
+          <div class="eye">
+            <span
+              onclick="showHideBtn()"
+              id="showHideBtn"
+              class="far fa-eye-slash"
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div class="indicator">
+        <span class="weak"></span>
+        <span class="medium"></span>
+        <span class="strong"></span>
+      </div>
+      <div class="text"></div>
+    </div>
+  </body>
+</html>
